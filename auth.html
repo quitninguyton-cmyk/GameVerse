@@ -157,6 +157,25 @@
           setTimeout(() => location.href = "index.html", 1000);
         }
       });
+    
+document.getElementById("forgot-password")
+  .addEventListener("click", async () => {
+    const email = prompt("Enter your account email:");
+
+    if (!email) return;
+
+    message.textContent = "Sending reset email...";
+
+    const { error } = await supabaseClient.auth
+      .resetPasswordForEmail(email, {
+        redirectTo: "https://quitninguyton-cmyk.github.io/GameVerse/auth.html"
+      });
+
+    message.textContent = error
+      ? error.message
+      : "Password reset email sent! Check your inbox.";
+  });
+
   </script>
 </body>
 </html>
