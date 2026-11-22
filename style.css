@@ -1,1 +1,150 @@
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #071323;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background: #0b1d35;
+  padding: 20px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  border-bottom: 1px solid #164a78;
+}
+
+header h1 {
+  color: #27aaff;
+  font-size: 28px;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: #c8e5ff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #27aaff;
+}
+
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(135deg, #071323, #063c70, #087cc0);
+}
+
+.hero h2 {
+  font-size: clamp(30px, 6vw, 52px);
+  margin-bottom: 15px;
+  color: #45baff;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #d2eaff;
+}
+
+.play-button {
+  display: inline-block;
+  background: #159cff;
+  color: white;
+  padding: 14px 30px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.play-button:hover {
+  background: #0074cc;
+  transform: scale(1.05);
+}
+
+section:not(.hero) {
+  padding: 45px 5%;
+}
+
+section h2 {
+  margin-bottom: 25px;
+  color: #40b5ff;
+}
+
+#search {
+  width: 100%;
+  max-width: 500px;
+  padding: 15px;
+  margin-bottom: 25px;
+  border: 1px solid #168ddd;
+  border-radius: 10px;
+  background: #102944;
+  color: white;
+  font-size: 16px;
+}
+
+.game-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 20px;
+}
+
+.game-card {
+  background: #102944;
+  padding: 20px;
+  border-radius: 14px;
+  border: 1px solid #164a78;
+  transition: 0.2s;
+}
+
+.game-card:hover {
+  transform: translateY(-5px);
+  border-color: #27aaff;
+}
+
+.game-card h3 {
+  margin-bottom: 10px;
+  color: #54bdff;
+}
+
+.game-card p {
+  color: #c0d9ee;
+  margin-bottom: 15px;
+}
+
+.game-card button {
+  background: #168ddd;
+  border: none;
+  padding: 10px 15px;
+  color: white;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.game-card button:hover {
+  background: #006bb5;
+}
+
+footer {
+  background: #0b1d35;
+  text-align: center;
+  padding: 25px;
+  color: #8ebce0;
+  border-top: 1px solid #164a78;
+}
+
