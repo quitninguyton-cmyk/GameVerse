@@ -1,1 +1,54 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GameVerse | Play Games Online</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>🎮 GameVerse</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#games">Games</a>
+      <a href="#categories">Categories</a>
+      <a href="#favorites">Favorites</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <h2>WELCOME TO GAMEVERSE</h2>
+      <p>Your next gaming adventure starts here.</p>
+      <a class="play-button" href="#games">Explore Games</a>
+    </section>
+
+    <section id="games">
+      <h2>🔥 Popular Games</h2>
+      <input type="text" id="search" placeholder="Search games...">
+      <div id="game-list" class="game-grid"></div>
+    </section>
+
+    <section id="categories">
+      <h2>🎯 Categories</h2>
+      <p>Action • Racing • Puzzle • Sports • Arcade</p>
+    </section>
+
+    <section id="favorites">
+      <h2>⭐ Your Favorites</h2>
+      <div id="favorite-list" class="game-grid"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 GameVerse. All rights reserved.</p>
+  </footer>
+
+  <script src="games.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+
