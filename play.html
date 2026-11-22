@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Playing | GameVerse</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .play-area {
+      max-width: 850px;
+      margin: 40px auto;
+      padding: 25px;
+      background: #102944;
+      border: 1px solid #168ddd;
+      border-radius: 15px;
+      text-align: center;
+    }
+
+    .game-content {
+      margin-top: 25px;
+      padding: 25px;
+      background: #071323;
+      border-radius: 12px;
+      min-height: 220px;
+    }
+
+    .game-content button {
+      margin: 7px;
+      padding: 12px 20px;
+      background: #168ddd;
+      border: none;
+      border-radius: 8px;
+      color: white;
+      cursor: pointer;
+    }
+
+    .game-content input {
+      padding: 12px;
+      border-radius: 8px;
+      border: 1px solid #168ddd;
+      background: #102944;
+      color: white;
+      max-width: 100%;
+    }
+
+    .back-button {
+      display: inline-block;
+      margin: 20px;
+      color: #55bdff;
+      text-decoration: none;
+    }
+
+    #game-message {
+      margin-top: 18px;
+      color: #55bdff;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🎮 GameVerse</h1>
+    <a class="back-button" href="index.html">← Back to Games</a>
+  </header>
+
+  <main class="play-area">
+    <h2 id="game-title">Loading Game...</h2>
+    <p id="game-description">Get ready to play!</p>
+
+    <div class="game-content" id="game-container">
+      Loading...
+    </div>
+
+    <p id="game-message"></p>
+  </main>
+
+  <script src="play.js"></script>
+</body>
+</html>
